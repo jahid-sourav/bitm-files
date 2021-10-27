@@ -1,0 +1,38 @@
+body{
+    background-color: #333;
+}
+.heading-one{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box-one{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    float: left;
+}
+.box-two{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    float: left;
+}
+.box-three{
+    height: 200px;
+    width: 200px;
+    background-color: #ff002b;
+    float: left;
+}
+.box-four{
+    height: 200px;
+    width: 200px;
+    background-color: #ff00b3;
+    float: left;
+}
+.box-five{
+    height: 200px;
+    width: 200px;
+    background-color: #fffb00;
+    float: left;
+}
