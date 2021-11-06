@@ -1,0 +1,98 @@
+// CSS Position Starts Here
+.box-one {
+    height: 300px;
+    width: 400px;
+    background-color: rgba($color: #ff6347, $alpha: 0.5);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+.box-two{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+.box-three{
+    height: 100px;
+    width: 100%;
+    background-color: royalblue;
+    position: sticky;
+    top: 0px;
+}
+// CSS Position Ends Here
+
+// Sticky Header Page Starts Here
+body{
+    background: #000000;
+    min-height: 200vh;
+}
+header{
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    .logo{
+        position: relative;
+        a{
+            font-weight: 700;
+            color: #fff;
+            font-size: 2em;
+            text-transform: uppercase;
+            transition: 0.6s;
+        }
+    }
+    .menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            position: relative;
+            a{
+                font-weight: 600;
+                font-size: 18px;
+                position: relative;
+                margin: 0 15px;
+                color: #fff;
+                transition: 0.6s;
+            }
+        }
+    }
+    &.sticky{
+        padding: 5px 100px;
+        background: #fff;
+    }
+}
+header.sticky{
+    .logo a,
+    .menu a{
+        color: #000;
+    }
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/banner.jpg");
+}
+// Sticky Header Page Ends Here
